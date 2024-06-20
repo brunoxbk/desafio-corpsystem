@@ -1,0 +1,27 @@
+version: '3.7'
+services:
+  web:
+    build: .
+    entrypoint: /app/entrypoint.sh
+    env_file:
+      - ./.env
+    restart: unless-stopped
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+  db:
+    platform: linux/x86_64
+    image: mysql:8.0.21
+    env_file:
+      - ./.env
+    restart: always
+    volumes:
+      - ./data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - ${DB_PORT}:${DB_PORT}
