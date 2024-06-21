@@ -111,21 +111,18 @@
 ![Swagger](static/swagger3.png "Swagger 3")
 ![Swagger](static/swagger4.png "Swagger 4")
 
-[![](https://markdown-videos-api.jorgenkh.no/youtube/8UNjDKrjlEI)](https://youtu.be/8UNjDKrjlEI)
-
-[![](https://markdown-videos-api.jorgenkh.no/youtube/hb8Szb8fiwE)](https://youtu.be/hb8Szb8fiwE)
 
 
 ## Swagger do projeto
 
-- [Swagger](http://localhost:8000/swagger/)
+- [Swagger](https://corp.brunoxbk.onlineswagger/)
 
 
 ## DRF endpoints
 
-- [Venda](http://localhost:8000/api/vendas/)
-- [Vendedor](http://localhost:8000/api/vendas/vendedores/)
-- [Compra](http://localhost:8000/api/compras/)
-- [Comprador](http://localhost:8000/api/compras/compradores/)
-- [Estoque](http://localhost:8000/api/estoque/)
-- [Produtos](http://localhost:8000/api/estoque/produtos/)
+- [Venda](https://corp.brunoxbk.online/api/vendas/)
+- [Vendedor](https://corp.brunoxbk.online/api/vendas/vendedores/)
+- [Compra](https://corp.brunoxbk.online/api/compras/)
+- [Comprador](https://corp.brunoxbk.online/api/compras/compradores/)
+- [Estoque](https://corp.brunoxbk.online/api/estoque/)
+- [Produtos](https://corp.brunoxbk.online/api/estoque/produtos/)
