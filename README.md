@@ -1,6 +1,6 @@
 # Desafio CorpSystem
 
-## Desenvolver uma API Rest de controle de estoque com os seguintes módulos:
+Desenvolver uma API Rest de controle de estoque com os seguintes módulos:
 - Venda
 - Vendedor
 - Compra
@@ -8,7 +8,12 @@
 - Estoque
 
 ## Link para aplicação no ar
-    Deploy realizado utilizando Dokku instalada na AWS
+Deploy realizado utilizando Dokku instalada na AWS
+Arquivos de configuração do deploy:
+- Procfile
+- runtime.txt
+- Dockerfile
+
 [https://corp.brunoxbk.online/](https://corp.brunoxbk.online/)
 
 ## Stack utilizada:
@@ -96,7 +101,7 @@
 
 ![Testes unitários](static/testes.png "Testes unitários")
 
-    Importação
+    Importação de protudos da API externa
 
 ![Importação](static/importacao.png "Importação")
 
@@ -111,6 +116,9 @@
 ![Swagger](static/swagger3.png "Swagger 3")
 ![Swagger](static/swagger4.png "Swagger 4")
 
+Vídeo demonstração
+
+[![](https://markdown-videos-api.jorgenkh.no/youtube/nz4_stddt1g)](https://youtu.be/nz4_stddt1g)
 
 
 ## Swagger do projeto
