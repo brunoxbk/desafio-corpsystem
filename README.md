@@ -20,7 +20,7 @@
     DEBUG=True
     SECRET_KEY=arandomstring
     ALLOWED_HOSTS=*,
-    DB_ENGINE=django.db.backends.mysql
+    DATABASE_URL=
     DB_NAME=
     DB_USER=
     DB_PASSWORD=
