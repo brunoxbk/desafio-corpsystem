@@ -1,2 +1,2 @@
 web: gunicorn core.wsgi:application
-release: python manage.py migrate --no-input 
+release: poetry run python manage.py migrate --no-input 
