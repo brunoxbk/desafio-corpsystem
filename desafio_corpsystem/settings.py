@@ -106,7 +106,7 @@ if DATABASE_URL:
     DATABASES = {
         'default': dj_database_url.parse(DATABASE_URL, conn_max_age=600),
         'tests': {
-            'NAME': f"test_{config('DB_NAME')}",
+            'NAME': "test_db",
         }
     }
 else:
