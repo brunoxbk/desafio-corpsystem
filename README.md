@@ -116,6 +116,10 @@ Arquivos de configuração do deploy:
 ![Swagger](static/swagger3.png "Swagger 3")
 ![Swagger](static/swagger4.png "Swagger 4")
 
+    Insômnia
+
+    Importar aquivo Insomnia_2024-06-21.json
+
 Vídeo demonstração
 
 [![](https://markdown-videos-api.jorgenkh.no/youtube/nz4_stddt1g)](https://youtu.be/nz4_stddt1g)
