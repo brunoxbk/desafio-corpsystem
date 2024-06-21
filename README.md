@@ -125,9 +125,14 @@ Vídeo demonstração
 [![](https://markdown-videos-api.jorgenkh.no/youtube/nz4_stddt1g)](https://youtu.be/nz4_stddt1g)
 
 
+    Deploy
+
+![Deploy](static/deploy1.png "Deploy 1")
+![Deploy](static/deploy2.png "Deploy 2")
+
 ## Swagger do projeto
 
-- [Swagger](https://corp.brunoxbk.onlineswagger/)
+- [Swagger](https://corp.brunoxbk.online/swagger/)
 
 
 ## DRF endpoints
