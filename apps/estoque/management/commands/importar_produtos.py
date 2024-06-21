@@ -1,6 +1,7 @@
 import requests
 from django.core.management.base import BaseCommand
-from apps.estoque.models import Produto
+from apps.estoque.models import Produto, Estoque
+from random import randint
 
 
 class Command(BaseCommand):
@@ -18,12 +19,23 @@ class Command(BaseCommand):
         
         for item in produtos:
             produto, created = Produto.objects.update_or_create(
-                id=item['id'],
+                nome=item['title'],
                 defaults={
                     'nome': item['title'],
                     'descricao': item['description'],
-                    'preco': item['price']
+                    'preco': item['price'],
+                    'categoria': item['category'],
+                    'imagem': item['image']
                 }
+            )
+
+            estoque, created = Estoque.objects.update_or_create(
+                produto=produto,
+                defaults={
+                    'produto': produto,
+                    'quantidade': randint(3,12)
+                }
+
             )
             
             if created:

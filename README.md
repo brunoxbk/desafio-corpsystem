@@ -1,19 +1,25 @@
 # Desafio CorpSystem
 
 ## Desenvolver uma API Rest de controle de estoque com os seguintes módulos:
-- Venda;
-- Vendedor;
-- Compra;
-- Comprador;
-- Estoque;
+- Venda
+- Vendedor
+- Compra
+- Comprador
+- Estoque
+
+## Link para aplicação no ar
+    Deploy realizado utilizando Dokku instalada na AWS
+[https://corp.brunoxbk.online/](https://corp.brunoxbk.online/)
 
 ## Stack utilizada:
 
-- Docker
-- Python
-- Django
-- MySQL
-- Django REST Framework
+- [Docker](https://www.docker.com/)
+- [Python](https://www.python.org/)
+- [Django](https://www.djangoproject.com/)
+- [MySQL](https://www.mysql.com/)
+- [Django REST Framework](https://www.django-rest-framework.org/)
+- [Dokku](https://dokku.com/)
+- [AWS](https://aws.amazon.com/pt/console/)
 
 ## Variáveis de ambiente
 
@@ -73,7 +79,37 @@
     docker compose exec web poetry run python manage.py test --pattern="*test*.py"
     ```
 
-# Evidências de testes
+## Importação de Produtos
+- Importar produtos com Poetry
+    ```sh
+    poetry run python manage.py importar_produtos     
+    ```
+
+- Importar produtos com Docker
+    ```sh
+    docker compose exec web poetry run python manage.py importar_produtos     
+    ```
+
+# Evidências e testes
+
+    Testes unitários
+
+![Testes unitários](static/testes.png "Testes unitários")
+
+    Importação
+
+![Importação](static/importacao.png "Importação")
+
+    Django Rest Framework
+
+![DRF](static/drf.png "DRF")
+
+    Swagger
+
+![Swagger](static/swagger1.png "Swagger 1")
+![Swagger](static/swagger2.png "Swagger 2")
+![Swagger](static/swagger3.png "Swagger 3")
+![Swagger](static/swagger4.png "Swagger 4")
 
 [![](https://markdown-videos-api.jorgenkh.no/youtube/8UNjDKrjlEI)](https://youtu.be/8UNjDKrjlEI)
 
@@ -87,8 +123,9 @@
 
 ## DRF endpoints
 
-- [Planos](http://localhost:8000/planos/)
-- [Produtos](http://localhost:8000/produtos/)
-- [Clientes](http://localhost:8000/clientes/)
-- [Aportes](http://localhost:8000/planos/aportes/)
-- [Resgates](http://localhost:8000/planos/aportes/)
+- [Venda](http://localhost:8000/api/vendas/)
+- [Vendedor](http://localhost:8000/api/vendas/vendedores/)
+- [Compra](http://localhost:8000/api/compras/)
+- [Comprador](http://localhost:8000/api/compras/compradores/)
+- [Estoque](http://localhost:8000/api/estoque/)
+- [Produtos](http://localhost:8000/api/estoque/produtos/)
